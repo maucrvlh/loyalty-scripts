@@ -1,0 +1,23 @@
+{
+  "name": "csv-to-json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "help": "node index.js",
+    "parse": "node index.js parse",
+    "storage": "node index.js storage",
+    "upload": "node index.js upload",
+    "pkg-linux": "pkg loyalty-scripts.js --target=node12-linux-x64",
+    "pkg-all": "pkg loyalty-scripts.js"
+  },
+  "dependencies": {
+    "commander": "^6.2.0",
+    "csvtojson": "^2.0.10",
+    "firebase-admin": "^9.4.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.9"
+  }
+}

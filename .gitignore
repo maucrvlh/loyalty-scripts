@@ -1,0 +1,7 @@
+parsed/
+origin/
+node_modules/
+arquivo*
+credenciais*
+*.lock
+report.txt
