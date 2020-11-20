@@ -72,7 +72,7 @@ const updateCoupons = (credentials, originFile, batchLimit = 499) => {
     program
         .command('update-coupons <credentials> <file>')
         .option('-b, --batch <limit>', 'configura o limite de posições no lote.')
-        .description('lê um arquivo CSV, extrai o cupom de resgate e atualiza-o no Firestore.\r\n\r\nexemplo: update-coupons credentials.json file.csv')
+        .description('lê um arquivo CSV, extrai o cupom de resgate e atualiza-o no Firestore')
         .action(function (credentials, file, cmd) {
             console.log('Starting update-coupons\r\n')
             console.log('file:', file);
