@@ -3,5 +3,7 @@ origin/
 node_modules/
 arquivo*
 credenciais*
+fixtures/
 *.lock
 report.txt
+dist

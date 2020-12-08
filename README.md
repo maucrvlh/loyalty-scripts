@@ -14,17 +14,34 @@ $ npm install && npm run pkg-linux [ou pkg-all para gerar o executável para tod
 Sintaxe:
 
 ```
-loyalty-scripts update-coupons <credentials> <file>
+loyalty update-coupons <arquivo csv> -c credenciais
 ```
 
 Exemplo:
 
 ```shell
-$ loyalty-scripts update-coupons credenciais-qa.json arquivo-qa.csv
+$ loyalty update-coupons -c /path/das/credenciais-qa.json /path/do/arquivo-qa.csv
 ```
+
+## Programa `relatorio`
+Sintaxe:
+
+```
+loyalty relatorio <modelo> -c credenciais -i data-início -t data-fim
+```
+
+Exemplo:
+
+```shell
+$ loyalty relatorio completo -c /path/das/credenciais-prd.json -i 2020-10-01T00:00:00 -t 2020-10-02T00:00:00
+```
+
+- Modelos disponíveis
+    - completo
+    - aprovados
 
 ### Mais detalhes
 
 ```shell
-$ loyalty-scripts help update-coupons
+$ loyalty help relatorio
 ```
